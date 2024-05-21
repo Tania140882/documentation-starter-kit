@@ -177,7 +177,32 @@ Add the following lines to the robots.txt file to disallow all search engine cra
 User-agent: *
 Disallow: /
 ```
+b) Meta Tags:
 
+Add the following meta tag to the head section of each HTML page that you do not want to be indexed:
+```
+<meta name="robots" content="noindex, nofollow">
+```
+c) Noindex Header:
+
+If you have control over your server configuration, you can set the ```X-Robots-TaG``` HTTP header to noindex for the pages you want to exclude.
+Here is a link to our detailed documentation that provides step-by-step instructions for each method.
+
+Please let me know if you need further assistance or if you have any other questions. I'm here to help!
+
+Best regards
+
+Tania
+
+> **Note** : Decision Making was done based on the customer’s request to prevent their project from being indexed by search engines. This might indicate their need for privacy or control over who can discover their content.
+
+****Additional Information for the decision taken:****
+
+* robots.txt File: This file gives instructions to web crawlers about which pages or files the crawler can or cannot request from the website. While most well-behaved search engine bots follow these instructions, it's not a foolproof method.
+
+* Meta Tags: Adding meta tags is a reliable method to instruct search engines not to index specific pages. This method ensures that individual pages are excluded from search results.
+
+* Noindex Header: This is an HTTP header response directive that can be used to prevent indexing. This method is useful for dynamically generated pages where adding a meta tag might not be feasible.
 
 
 ## Question 9 
