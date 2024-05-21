@@ -115,3 +115,93 @@ Thank you for your patience and understanding.
 Best regards,
 
 Tania
+
+## Question  7
+A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog path
+to https://example.com?" Please write a reply to the customer. Feel free to add any
+information about your decision making process after the reply.
+
+### Response:
+Hi [CustomerName],
+
+Thank you for reaching out to us!
+
+To redirect the /blog path to another URL, you can utilize the Vercel configuration file (vercel.json) to set up the necessary redirects. 
+Steps to achieve this:
+
+* Create or update your vercel.json file in the root directory of your project.
+
+Add a "routes" property to specify the redirects. Below is an example configuration:
+```
+{
+  "routes": [
+    { "src": "/blog", "status": 301, "headers": { "Location": "https://example.com" } }
+  ]
+}
+```
+Save the changes to your vercel.json file and deployed your project to Vercel. 
+
+Accessing the /blog path should automatically redirect visitors to https://example.com cause of http redirect status code 301.
+
+If you have any further questions or need assistance with anything else, feel free to reach out to us anytime. We're here to help!
+
+Best regards,
+
+Tania
+
+> **Note** : Decision was done based on the theory that the Customer is using Vercel framework to deply their Project. The configuration file (\*.json) is to set up the redirect because it's a straightforward  way to handle redirects for Vercel projects.
+
+
+
+## Question  8
+A customer is creating a site and would like their project not to be indexed by search
+engines. Please write a reply to the customer. Feel free to add any information about
+your decision making process after the reply.
+
+### Response:
+Hi [CustomerName],
+
+Thank you for reaching out to us. I understand that you would like your project not to be indexed by search engines. While we can certainly help you achieve this, it's important to consider the implications.
+
+Implications of Not Indexing Your Project:
+This as you know would reduced discoverability through Search engines and it will not list your site in search results.
+Also to keep in mind, you will miss out on organic traffic that comes from search engine results, potentially reducing the number of visitors to your site.
+If you ever change your mind and decide to index your site in the future, it may take some time for search engines to crawl and index your site, delaying your Search Enginer optimization efforts.
+
+Steps to Prevent Search Engine Indexing:
+To ensure your project is not indexed by search engines, you can follow these steps:
+
+a) robots.txt File:
+
+Create or edit a robots.txt file in the root directory of your site.
+Add the following lines to the robots.txt file to disallow all search engine crawlers:
+```
+User-agent: *
+Disallow: /
+```
+b) Meta Tags:
+
+Add the following meta tag to the <head> section of each HTML page that you do not want to be indexed:
+```
+<meta name="robots" content="noindex, nofollow">
+```
+c) Noindex Header:
+
+If you have control over your server configuration, you can set the ```X-Robots-TaG``` HTTP header to noindex for the pages you want to exclude.
+Here is a link to our detailed documentation that provides step-by-step instructions for each method.
+
+Please let me know if you need further assistance or if you have any other questions. I'm here to help!
+
+Best regards
+
+Tania
+
+> **Note** : Decision Making was done based on the customer’s request to prevent their project from being indexed by search engines. This might indicate their need for privacy or control over who can discover their content.
+
+****Additional Information for the decision taken:****
+
+* robots.txt File: This file gives instructions to web crawlers about which pages or files the crawler can or cannot request from the website. While most well-behaved search engine bots follow these instructions, it's not a foolproof method.
+
+* Meta Tags: Adding meta tags is a reliable method to instruct search engines not to index specific pages. This method ensures that individual pages are excluded from search results.
+
+* Noindex Header: This is an HTTP header response directive that can be used to prevent indexing. This method is useful for dynamically generated pages where adding a meta tag might not be feasible.
