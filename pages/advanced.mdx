@@ -1,5 +1,5 @@
 # The Exercise
-### Question 1:
+## Question 1:
 From [this list](https://gist.github.com/Pieparker/b04a4e9ff82ba949e5db9d5b0e9d89e8), rank your 5 most favourite and 5 least favourite support tasks. Provide a
 brief explanation for each.
 
@@ -20,7 +20,7 @@ brief explanation for each.
 * Run ticket review sessions to make sure tone is consistent.
 * Help resolve billing issues for customers.
 
-### Question 2
+## Question 2
 What do you want to learn or do more of at work?
 
 
@@ -36,7 +36,7 @@ At Vercel I would want to utilize my skills to explore and further deepen my kno
 * Work with the product team to develop a new feature based on feedback from customers.
 
 
-### Question 3
+## Question 3
 Describe how you solved a challenge or technical issue that you faced in a previous role
 (preferably in a previous support role). How did you determine that your solution was
 successful?
@@ -53,7 +53,7 @@ I took immediate action to address the issue. I called for a retrospective meeti
 **Result**: We arrived at a flexible approach, allowing for regular check-ins and working in collaboration to test the functionality out. Adjustments were made based on progress and new information.
 
 
-### Question 4
+## Question 4
 When would you choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?
 
 
@@ -69,7 +69,7 @@ When would you choose to use Edge Functions, Serverless Functions, or Edge Middl
 
 
 
-### Question  5
+## Question  5
 Imagine a customer writes in requesting help with a build issue on a framework or technology that you've not seen before. How would you begin troubleshooting this and what questions would you ask he customer to understand the situation better?
 
 
@@ -99,7 +99,7 @@ Acknowledge the mail and Gather Initial Information to understand the context of
 Finally if solved, get the confirmation from the Customer and document the issue and Troubleshooting steps and put it in knowledge base.
 
 
-### Question  6
+## Question  6
 The customer from question 5 replies to your response with the below:
 “I’m so frustrated. I’ve been trying to make this work for hours and I just can’t figure it
 out. It must be a platform issue so just fix it for me instead of asking me questions.”
@@ -121,7 +121,7 @@ Best regards,
 Tania
 
 
-### Question  7
+## Question  7
 A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog path
 to https://example.com?" Please write a reply to the customer. Feel free to add any
 information about your decision making process after the reply.
@@ -158,7 +158,7 @@ Tania
 
 
 
-### Question  8
+## Question  8
 A customer is creating a site and would like their project not to be indexed by search
 engines. Please write a reply to the customer. Feel free to add any information about
 your decision making process after the reply.
@@ -176,7 +176,7 @@ If you ever change your mind and decide to index your site in the future, it may
 Steps to Prevent Search Engine Indexing:
 To ensure your project is not indexed by search engines, you can follow these steps:
 
-robots.txt File:
+a) robots.txt File:
 
 Create or edit a robots.txt file in the root directory of your site.
 Add the following lines to the robots.txt file to disallow all search engine crawlers:
@@ -184,52 +184,65 @@ Add the following lines to the robots.txt file to disallow all search engine cra
 User-agent: *
 Disallow: /
 ```
-Meta Tags:
+b) Meta Tags:
 
 Add the following meta tag to the <head> section of each HTML page that you do not want to be indexed:
 ```
 <meta name="robots" content="noindex, nofollow">
 ```
+c) Noindex Header:
 
-Password Protection:
-Use basic authentication to password-protect your site or specific directories. This prevents search engines from accessing and indexing those pages.
-
-Noindex Header:
 If you have control over your server configuration, you can set the ```X-Robots-TaG``` HTTP header to noindex for the pages you want to exclude.
 Here is a link to our detailed documentation that provides step-by-step instructions for each method.
 
 Please let me know if you need further assistance or if you have any other questions. I'm here to help!
 
 Best regards
+
 Tania
 
 > **Note** : Decision Making was done based on the customer’s request to prevent their project from being indexed by search engines. This might indicate their need for privacy or control over who can discover their content.
 
+****Additional Information for the decision taken:****
+
+* robots.txt File: This file gives instructions to web crawlers about which pages or files the crawler can or cannot request from the website. While most well-behaved search engine bots follow these instructions, it's not a foolproof method.
+
+* Meta Tags: Adding meta tags is a reliable method to instruct search engines not to index specific pages. This method ensures that individual pages are excluded from search results.
+
+* Noindex Header: This is an HTTP header response directive that can be used to prevent indexing. This method is useful for dynamically generated pages where adding a meta tag might not be feasible.
 
 
-### Question 9 
+## Question 9 
 What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, short-term
 and long-term?
 
 Most common issue for Vercel customer could be build failure (as suggested in Question 5 above) or Integration issue with third party services
 
-*Short-Term Solutions could be:
+**Short-Term Solutions could be**
+
 Identify the Issue:
 * Gather Details by asking the customer for specific error messages, logs, and the steps they took before encountering the issue.
 * Check Documentation by directing the customer to relevant documentation or guides that address common deployment problems.
 
-*Provide Assistance:
+Provide Assistance:
+* Offer to guide the customer through the debugging process in screen share mode. 
 
-* Walkthrough Debugging: Offer to guide the customer through the debugging process in screen share mode. 
-This might involve checking their build configuration, ensuring that environment variables are set correctly, and verifying that all required services are running.
+Walkthrough Debugging: 
+* This might involve checking their build configuration, ensuring that environment variables are set correctly, and verifying that all required services are running.
 
-*Long-Term Solutions
+**Long-Term Solutions**
+
 Education and Training:
 * Documentation and Tutorials: Develop comprehensive guides and tutorials that cover common deployment issues and their solutions. Ensure these resources are easily accessible.
 * Webinars and Workshops to educate customers about best practices for deploying with Vercel, including how to troubleshoot common problems.
 
-### Question 10
+## Question 10
 How could we improve or alter this familiarisation exercise?
+
+### Response:
+The exercise is helpful to get to know Vercel Platform and deployment process. Probably a template suggestion could have been more helpful. Nevertheless liked doing the task.
+
+
 
 
 
