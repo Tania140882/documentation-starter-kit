@@ -151,57 +151,33 @@ Tania
 
 > **Note** : Decision was done based on the theory that the Customer is using Vercel framework to deply their Project. The configuration file (\*.json) is to set up the redirect because it's a straightforward  way to handle redirects for Vercel projects.
 
+## Question 9 
+What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, short-term
+and long-term?
 
+Most common issue for Vercel customer could be build failure (as suggested in Question 5 above) or Integration issue with third party services
 
-## Question  8
-A customer is creating a site and would like their project not to be indexed by search
-engines. Please write a reply to the customer. Feel free to add any information about
-your decision making process after the reply.
+**Short-Term Solutions could be**
+
+Identify the Issue:
+* Gather Details by asking the customer for specific error messages, logs, and the steps they took before encountering the issue.
+* Check Documentation by directing the customer to relevant documentation or guides that address common deployment problems.
+
+Provide Assistance:
+* Offer to guide the customer through the debugging process in screen share mode. 
+
+Walkthrough Debugging: 
+* This might involve checking their build configuration, ensuring that environment variables are set correctly, and verifying that all required services are running.
+
+**Long-Term Solutions**
+
+Education and Training:
+* Documentation and Tutorials: Develop comprehensive guides and tutorials that cover common deployment issues and their solutions. Ensure these resources are easily accessible.
+* Webinars and Workshops to educate customers about best practices for deploying with Vercel, including how to troubleshoot common problems.
+
+## Question 10
+How could we improve or alter this familiarisation exercise?
 
 ### Response:
-Hi [CustomerName],
+The exercise is helpful to get to know Vercel Platform and deployment process. Probably a template suggestion could have been more helpful. Nevertheless liked doing the task.
 
-Thank you for reaching out to us. I understand that you would like your project not to be indexed by search engines. While we can certainly help you achieve this, it's important to consider the implications.
-
-Implications of Not Indexing Your Project:
-This as you know would reduced discoverability through Search engines and it will not list your site in search results.
-Also to keep in mind, you will miss out on organic traffic that comes from search engine results, potentially reducing the number of visitors to your site.
-If you ever change your mind and decide to index your site in the future, it may take some time for search engines to crawl and index your site, delaying your Search Enginer optimization efforts.
-
-Steps to Prevent Search Engine Indexing:
-To ensure your project is not indexed by search engines, you can follow these steps:
-
-a) robots.txt File:
-
-Create or edit a robots.txt file in the root directory of your site.
-Add the following lines to the robots.txt file to disallow all search engine crawlers:
-```
-User-agent: *
-Disallow: /
-```
-b) Meta Tags:
-
-Add the following meta tag to the <head> section of each HTML page that you do not want to be indexed:
-```
-<meta name="robots" content="noindex, nofollow">
-```
-c) Noindex Header:
-
-If you have control over your server configuration, you can set the ```X-Robots-TaG``` HTTP header to noindex for the pages you want to exclude.
-Here is a link to our detailed documentation that provides step-by-step instructions for each method.
-
-Please let me know if you need further assistance or if you have any other questions. I'm here to help!
-
-Best regards
-
-Tania
-
-> **Note** : Decision Making was done based on the customer’s request to prevent their project from being indexed by search engines. This might indicate their need for privacy or control over who can discover their content.
-
-****Additional Information for the decision taken:****
-
-* robots.txt File: This file gives instructions to web crawlers about which pages or files the crawler can or cannot request from the website. While most well-behaved search engine bots follow these instructions, it's not a foolproof method.
-
-* Meta Tags: Adding meta tags is a reliable method to instruct search engines not to index specific pages. This method ensures that individual pages are excluded from search results.
-
-* Noindex Header: This is an HTTP header response directive that can be used to prevent indexing. This method is useful for dynamically generated pages where adding a meta tag might not be feasible.
